@@ -1,1 +1,138 @@
+/* 1. BODY: Apenas limpa as margens e define o fundo */
+body {
+    background-color: #779cc5;
+    font-family: "Times New Roman", "Georgia", serif;
+    margin: 0; /* Essencial para a barra encostar nas pontas */
+}
 
+/* 2. BARRA SUPERIOR: Vai de ponta a ponta sem frestas */
+.barra-superior {
+    background-color: #C5A077;
+    width: 100%;
+    padding: 25px 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/*cards*/
+/* 1. CARD RESPONSIVO (Ajustado com box-sizing do slide) */
+section > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;            /* Alinha a imagem e o texto no centro verticalmente */
+    
+    width: 90%;
+    max-width: 550px;
+    padding: 15px;
+    margin: 20px auto;
+    
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #C5A077;
+    box-sizing: border-box;         /* OBRIGATÓRIO: impede o padding de criar rolagem horizontal */
+}
+
+/* 2. IMAGEM RESPONSIVA (Slide 31 - Usando porcentagem) */
+section div img {
+    width: 35%;                     /* Ocupa 35% do card em qualquer tamanho de tela */
+    height: auto;                   /* Mantém a proporção da imagem sem distorcer */
+    max-width: 150px;               /* Em telas grandes não passa de 150px */
+    border-radius: 6px;
+}
+
+/* 3. BLOCO DE TEXTO RESPONSIVO */
+section div div {
+    width: 60%;                     /* Ocupa 60% do card sem estourar a caixa */
+    text-align: center;
+}
+
+
+section div div h3 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+}
+
+main section h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #ffffff;
+    margin: 25px 0 15px 0;
+}
+
+section div div p {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+}
+
+section div div a {
+    display: block;                 /* Faz o link virar bloco para quebrar a linha */
+    color: #0000ee;
+}
+/* Centraliza o título da seção de cadastro */
+main section h2 {
+  text-align: center;
+  color: #ffffff;
+  margin: 25px 0 15px 0;
+}
+
+/* Estilização do Formulário */
+form {
+  width: 90%;                     /* Ocupa 90% da tela em dispositivos menores */
+  max-width: 550px;               /* Mantém a mesma largura máxima dos cards de produto */
+  margin: 20px auto;              /* Centraliza o formulário na página */
+  padding: 20px;                  /* Espaçamento interno */
+  
+  background-color: #C5A077;      /* Cor de fundo solicitada */
+  border: 1px solid #ccc;         /* Borda externa */
+  border-radius: 8px;             /* Cantos arredondados */
+  box-sizing: border-box;         /* Garante que o padding não aumente o tamanho total */
+}
+
+/* Centraliza os campos e o botão dentro do formulário */
+form p {
+  text-align: center;             /* Centraliza os rótulos e campos de texto */
+  margin-bottom: 15px;            /* Dá um espaço entre cada campo */
+  color: #ffffff;                 /* Cor do texto das labels */
+}
+
+/* Garante que o botão fique centralizado */
+form button {
+  display: block;                 /* Transforma o botão em bloco para aceitar margin auto */
+  margin: 0 auto;                 /* Centraliza o botão na horizontal */
+  padding: 10px 20px;             /* Tamanho do botão */
+  border: none;
+  border-radius: 4px;
+  background-color: #779cc5;      /* Fundo azul para dar contraste com o card bege */
+  color: #ffffff;                 /* Texto branco */
+  font-size: 16px;
+}
+/* Transforma o texto do rótulo em bloco */
+form p label {
+  display: block;        /* Vai para uma linha própria */
+  margin-bottom: 5px;    /* Espaço até a caixa de texto */
+}
+
+/* Deixa todas as caixas de digitação com o mesmo tamanho */
+form p input {
+  display: block;        /* Garante que fique na linha de baixo */
+  width: 100%;           /* Ocupa a largura total do container */
+  max-width: 300px;      /* Define um tamanho limite igual para todos */
+  margin: 0 auto;        /* Centraliza a caixa no formulário */
+  padding: 6px;          /* Espaçamento interno da caixa */
+  box-sizing: border-box;/* Evita que o padding aumente a largura */
+}
+/* BARRA INFERIOR (RODAPÉ) */
+footer {
+  background-color: #C5A077; /* Mesma cor da barra superior */
+  width: 100%;               /* Ocupa toda a largura da tela */
+  padding: 10px 15px;        /* Padding menor para a barra ficar menos alta */
+  text-align: center;        /* Centraliza o texto */
+  box-sizing: border-box;    /* Evita rolagem lateral */
+}
+
+/* Texto dentro do rodapé */
+footer p {
+  margin: 3px 0;             /* Margem pequena para separar o nome dos direitos */
+  color: #ffffff;            /* Texto em branco */
+  font-size: 14px;           /* Tamanho de fonte sutil */
+}
